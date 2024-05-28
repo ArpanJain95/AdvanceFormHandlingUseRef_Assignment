@@ -1,34 +1,34 @@
-### Advanced Form Handling with useRef in React
+# Advanced Form Handling with useRef in React
 
 ## Overview
 The project focuses on utilizing the useRef hook in React for advanced form handling. It covers topics such as managing form elements, input focus, real-time input validation and custom form submission handling.
 
 ## Implementation Details
-# Components
+### Components
 - App.js: Contains the main React component for the form handling functionality.
 
-# useRef Hooks
+### useRef Hooks
 - onLoadRef: References the input field for the full name.
 - dateRef, monthRef, yearRef: References the input fields for the birth date.
 - maleRef, femaleRef: References the checkboxes for gender selection.
 - contactRef: References the input field for the contact number.
 - validRef: References the submit button.
 
-# State Variables
+### State Variables
 - fullNameValid, dateValid, monthValid, yearValid, genderChecked, contactValid: Booleans indicating the validity of form inputs.
 - formValid: Boolean indicating overall form validity.
 
-# Functions
+### Functions
 - nameValid(event): Validates the full name input.
 - ifValid(event, len, setStuff, focusTo): Validates input fields based on length and sets corresponding state variables.
 - handleCheckbox(event, otherRef): Handles checkbox input and disables/enables the opposite checkbox.
 - handleSubmit(): Logs a success message upon form submission.
 
-# useEffect Hook
+### useEffect Hook
 - useEffect(() => {...}, []): Focuses on the full name input field when the component mounts.
 - useEffect(() => {...}, [fullNameValid, dateValid, monthValid, yearValid, genderChecked, contactValid]): Checks the form validity whenever any of the form input state variables change.
 
-# Running the Project
+### Running the Project
 - Ensure Node.js and npm are installed on your system.
 - Clone the repository from GitHub.
 - Navigate to the project directory and install dependencies using npm install.
